@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang = "en">
+<meta charset = "UTF-8">
+<head>
+    <title>RockPaperScissors</title>
+</head>
+<body>
+<script>
+
+let Rock = 3
+let Paper = 2
+let Scissors = 1
+
+function getComputerChoice() {
+    
+    function computerChoice() {
+     return Math.floor(Math.random() * 3 + 1)
+    } 
+    
+    if (computerChoice() == 3) 
+    return ("Rock"); 
+    else if (computerChoice() == 2)
+    return ("Paper");
+    else (computerChoice() == 1) 
+    return ("Scissors");
+}
+
+function playerSelection(pick) {
+prompt("What is your choice")
+}
+console.log(playerSelection())
+
+</script>
+
+</body>
+
+</html>
