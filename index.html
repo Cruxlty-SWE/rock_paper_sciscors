@@ -16,7 +16,7 @@ function getComputerChoice() {
     function computerChoice() {
      return Math.floor(Math.random() * 3 + 1)
     } 
-    
+
     if (computerChoice() == 3) 
     return ("Rock"); 
     else if (computerChoice() == 2)
@@ -26,8 +26,16 @@ function getComputerChoice() {
 }
 
 function playerSelection(pick) {
-prompt("What is your choice")
+   pick = prompt("Make your selection")
+    
+    if (pick.toUpperCase() == "ROCK")
+    return (3);
+    else if (pick.toUpperCase() == "PAPER")
+    return (2);
+    else (pick.toUpperCase() == "SCISSORS")
+    return (1);
 }
+console.log(getComputerChoice())
 console.log(playerSelection())
 
 </script>
